@@ -1,0 +1,18 @@
+.orange-color {
+  color: #E77C41;
+}
+
+.node-tree {
+  font-family: monospace;
+
+  ul {
+    font-size: 10px;
+    margin: 12px 0;
+    padding-left: 18px
+  }
+
+  &__indicator {
+    display: flex;
+    align-items: center
+  }
+}

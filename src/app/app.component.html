@@ -1,0 +1,17 @@
+<main style="display: flex">
+  <input (change)="onChangeFileInput($event)"
+         type="file"
+         accept="text/plain"/>
+
+
+  <textarea style="margin-right: 20px"
+            (ngModelChange)="onChangeTextarea($event)"
+            [ngModel]="fileText"
+            name="" id=""
+            cols="30"
+            rows="10">
+</textarea>
+
+  <app-tree-node [model]="model"></app-tree-node>
+
+</main>
