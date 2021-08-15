@@ -4,12 +4,12 @@
       {{model.nodeQuantity}}
     </ul>
   </div>
-  <ng-container  *ngFor="let child of model?.child;let i = index">
+  <ng-container *ngFor="let child of model?.child;let i = index">
     <ul>
       <span class="node-tree__indicator" [ngClass]="{'orange-color' : child.nodeQuantity <= 2}">
       <span>
         + -
-      </span> {{child.nodeQuantity}}{{child.nodeQuantity < 2 ? '   ' + ' (' + child.nodeTitle + ') ' : ''}}
+      </span> {{child.nodeQuantity}}{{child.nodeQuantity < 2 || child.nodeQuantity >= 2 && !child.child ? '   ' + ' (' + child.nodeTitle + ') ' : ''}}
     </span>
       <app-tree-node [model]="child">
 

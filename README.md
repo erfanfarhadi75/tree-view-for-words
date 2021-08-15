@@ -10,7 +10,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
  
 
 ## unit test
-I have not written a test yet but I have read about it a bit and write this 2 test for you
 ****
  2 example of unit test 
    it(`should have public var model`, () => {
